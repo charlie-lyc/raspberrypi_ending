@@ -1,0 +1,49 @@
+### Raspberry Pi OS Install: raspberry.com/software/operating-systems
+#   Select One... in my case "Raspberry Pi OS with Desktop"(Not heavy and CLI)
+
+
+### Main Menu - Preferences - Raspberry Pi Configuration - Localisation
+##  Locale 
+#   - Language     : en(English)
+#   - Country      : US(United States)
+#   - Character Set: UTF-8
+##  Timezone
+#   - Area    : Asia
+#   - Location: Seoul
+##  Keyboard
+#   - Model  : Generic 105-key PC(intl.)
+#   - Layout : Korean
+#   - Variant: Korean(101/104 key compatible)
+##  WiFi Country
+#   - Country: KR Korea(South)
+
+
+### Check Bootloader
+# $ sudo rpi-eeprom-update
+# => 'Update Available' or 'Up to Date'
+### Update Bootloader Firmware
+# $ sudo raspi-config
+# ... 
+# => 8. Update
+
+
+### Argone M.2 Script Install
+# $ curl https://download.argon40.com/argon1.sh|bash
+# $ argonone-config
+# $ ...
+
+## Argone M.2 Button Action
+# 1. Turn On: Short Press
+# 2. Long Press(Over 3 Seconds): Soft Shutdown and Power Cut
+# 3. Double Tap: Reboot
+# 4. Long Press(Over 5 Seconds): Forced Shutdown
+
+
+### Korean Font Install
+# $ sudo apt update && sudo apt upgrade
+# $ sudo apt-get install fonts-unfonts-core ibus ibus-hangul -y
+### Set Up
+# "EN" Right Click
+# IBus Preference - Input Method - Add - Korean
+### Switch English, Korean
+# Shift + Space
