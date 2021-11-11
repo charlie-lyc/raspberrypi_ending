@@ -44,7 +44,7 @@
 
 ### Korean Font Install
 # $ sudo apt update && sudo apt upgrade
-# $ sudo apt-get install fonts-unfonts-core ibus ibus-hangul -y
+# $ sudo apt install fonts-unfonts-core ibus ibus-hangul -y
 ### Set Up
 # Right Click 'EN' or 'Keyboard' shape icon of Menu Bar
 # IBus Preference - Input Method - Add - Korean - Select 'Taegeuk' shape, only
