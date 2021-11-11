@@ -7,11 +7,11 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(LED, GPIO.OUT)
 
 ### GPIO.PWM(param1, param2)
-## First parameter: pin
-## Second parameter: frequency(Hz)
+## Param1: pin
+## Param2: frequency(Hz)
 pwm_led = GPIO.PWM(LED, 50)
 
-### Duty cycle start
+### Duty cycle(0 ~ 100) start
 pwm_led.start(0)
 for _ in range(5):               # Softly blink 5 times
     for i in range(101):         # Duty cycle change: 0 -> 100
@@ -21,4 +21,4 @@ for _ in range(5):               # Softly blink 5 times
         pwm_led.ChangeDutyCycle(j)
         sleep(0.02)
 
-GPIO.cleanup()
+GPIO.cleanup() 
