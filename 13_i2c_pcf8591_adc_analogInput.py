@@ -16,14 +16,14 @@ bus = smbus.SMBus(1) # Initialize I2C bus as Raspberrypi(1)
 try:
     while True:
         ## Write input analog value 
-        bus.write_byte(address, AIN0)
+        # bus.write_byte(address, AIN0)
         # bus.write_byte(address, AIN1)
-        # bus.write_byte(address, AIN3)
+        bus.write_byte(address, AIN3)
 
         ## Read analog value
         value = bus.read_byte(address)
         voltage = value * 3.3 / 255
-        print('Aanalog Digital Converter - Value | Voltage : {:>5} | {:>5.3f}'.format(value, voltage))
+        print('Aanalog to Digital Converter - Value | Voltage : {:>5} | {:>5.3f}'.format(value, voltage))
         sleep(0.5)
 except KeyboardInterrupt:
     print('Stopped by Keyboard Interrupt')

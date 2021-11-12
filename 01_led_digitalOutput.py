@@ -23,4 +23,4 @@ for _ in range(5):        # Blink 5 times
 GPIO.cleanup()            # Clear all resource on GPIO
 
 ## Run
-# python3 01_led_digitalOutput.py
+# python 01_led_digitalOutput.py

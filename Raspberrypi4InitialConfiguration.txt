@@ -1,12 +1,12 @@
 ### Raspberry Pi OS Install: raspberry.com/software/operating-systems
-##  Select One...
+##  Debian Buster: Select One...
 #   - Raspberry Pi OS with Desktop and recommended software : Heavy but rich
 #   - Raspberry Pi OS with Desktop : Not heavy and not CLI
 #   - Raspberry Pi Os Lite : Light but CLI
 
 ### Setup after installing OS
-## Password ...
-## Update Software <= SKIP!!!(take so long)
+## Change Password ...
+## Update Software: !!! SKIP !!!(take so long)
 
 ### Configuration : Main Menu - Preferences - Raspberry Pi Configuration
 ## System ...
@@ -18,6 +18,7 @@
 ### Update and upgrade
 # $ sudo apt update 
 # $ sudo apt upgrade
+# $ sudo rpi-update
 
 ### Check bootloader
 # $ sudo rpi-eeprom-update
@@ -26,16 +27,18 @@
 # $ sudo raspi-config
 # => 8. Update
 
-### Korean Font Install
-# $ sudo apt update && sudo apt upgrade
+### Install Korean font
 # $ sudo apt install fonts-unfonts-core ibus ibus-hangul -y
-### Set Up
-# Right Click 'EN' or 'Keyboard' shape icon of Menu Bar
-# IBus Preference - Input Method - Add - Korean - Select 'Taegeuk' shape, only
-### Switch English, Korean
+# $ sudo reboot
+### Add on
+# Right Click 'EN' icon of Menu Bar
+# IBus Preference - Input Method - Add - Korean - Select 'Taegeuk' shape
+### Set up
+# Left Click 'EN' icon of Menu Bar - Select "Korean - Hangul"
+### Switch Korean - English
 # Shift + Space
 
-#########################################
+############################################################
 
 ### Argone M.2 Script Install
 # $ curl https://download.argon40.com/argon1.sh|bash

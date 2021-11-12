@@ -11,7 +11,7 @@ try:
         for value in range(256):
             bus.write_byte_data(address, ANALOG_OUT, value)
             voltage = value * 3.3 / 255
-            print('Digital Analog Converter - Value | Voltage : {:>5} | {:>5.3f}'.format(value, voltage))
+            print('Digital to Analog Converter - Value | Voltage : {:>5} | {:>5.3f}'.format(value, voltage))
             sleep(0.01)
 except KeyboardInterrupt:
     print('Stopped by Keyboard Interrupt')
