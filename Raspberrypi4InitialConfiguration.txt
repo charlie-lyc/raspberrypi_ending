@@ -4,7 +4,11 @@
 #   - Raspberry Pi OS with Desktop : Not heavy and not CLI
 #   - Raspberry Pi Os Lite : Light but CLI
 
-### Setup : Main Menu - Preferences - Raspberry Pi Configuration
+### Setup after installing OS
+## Password ...
+## Update Software <= SKIP!!!(take so long)
+
+### Configuration : Main Menu - Preferences - Raspberry Pi Configuration
 ## System ...
 ## Display ...
 ## Interfaces ...
@@ -15,12 +19,11 @@
 # $ sudo apt update 
 # $ sudo apt upgrade
 
-### Check Bootloader
+### Check bootloader
 # $ sudo rpi-eeprom-update
 # => 'Update Available' or 'Up to Date'
-### Update Bootloader Firmware
+### Update bootloader firmware, if 'Update Available'
 # $ sudo raspi-config
-# ... 
 # => 8. Update
 
 ### Korean Font Install
