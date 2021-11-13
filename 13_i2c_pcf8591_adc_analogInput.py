@@ -1,7 +1,7 @@
 from time import sleep
 
 ## Install package
-# $ sudo apt install python3-smbus
+# $ sudo apt install python-smbus
 
 import smbus
 

@@ -1,8 +1,8 @@
 from time import sleep
 
 ## Install package (or library)
-# $ sudo apt install python3-dev
-# $ sudo apt install python3-rpi.gpio
+# $ sudo apt install python-dev
+# $ sudo apt install python-rpi.gpio
 
 ## Use module
 import RPi.GPIO as GPIO

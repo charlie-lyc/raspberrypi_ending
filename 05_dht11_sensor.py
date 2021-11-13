@@ -2,9 +2,6 @@ from time import sleep
 
 ## Install package
 # $ sudo pip3 install Adafruit_Python_DHT
-#################################################
-### Adafruit_Python_DHT LIBRARY IS DEPRECATED ###
-#################################################
 ## Add some codes like below for supporting Raspberrypi4 hardware(BCM2711) 
 # /usr/local/lib/python3.7/dist-packages/Adafruit_DHT/platform_detect.py
 # ...
@@ -30,20 +27,21 @@ try:
 except KeyboardInterrupt:
     print('Stopped by Keyboard Interrupt')
 
-
-#################################################################
+#################################################
+### Adafruit_Python_DHT LIBRARY IS DEPRECATED ###
+#################################################
+#################################################
 ## Use other packgages
 # $ sudo pip3 install adafruit-circuitpython-dht
 # $ sudo apt install gpiod libgpiod-dev
-## Working anyway but often happened RuntimeError...
-#################################################################
+## Working anyway but often happened RuntimeError!
+#################################################
 
 # import adafruit_dht
 # import board        # BCM mode
 
 
 # dht_device = adafruit_dht.DHT11(board.D24) # board.D24: GPIO-24
-
 # while True:
 #     try:
 #         temperature = dht_device.temperature
